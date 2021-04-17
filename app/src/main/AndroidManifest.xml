@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.fixtureservicexyz">
+
+    <application
+        android:icon="@drawable/fixture_logo_app"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/fixture_logo_app"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.fixtureservicexyz.activities.GoogleUserLocationActivity"></activity>
+        <activity android:name="com.fixtureservicexyz.activities.GuestLocationActivity" />
+        <activity android:name="com.fixtureservicexyz.activities.GuestLoginActivity" />
+        <activity android:name="com.fixtureservicexyz.activities.SignUpCreatingAccountActivity" />
+        <activity android:name="com.fixtureservicexyz.activities.SignUpAddressActivity" />
+        <activity android:name="com.fixtureservicexyz.activities.SignUpPersonalDataActivity" />
+        <activity android:name="com.fixtureservicexyz.activities.SignInPasswordActivity" />
+        <activity android:name="com.fixtureservicexyz.activities.SignInUsernameActivity" />
+        <activity android:name="com.fixtureservicexyz.activities.LoginActivity" />
+        <activity android:name="com.fixtureservicexyz.MainActivity" />
+        <activity
+            android:name="com.fixtureservicexyz.activities.HomeActivity"
+            android:theme="@style/AppTheme.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "602319086946",
+    "project_id": "fixture-6dd37",
+    "storage_bucket": "fixture-6dd37.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:602319086946:android:7a4689b7b1c1ad85e7783b",
+        "android_client_info": {
+          "package_name": "com.fixtureservicexyz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "602319086946-ggpgp12clis3h7jp87csi2tqclu799t9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.fixtureservicexyz",
+            "certificate_hash": "c94a81f0a316912cb8b7f5613def3455e871a190"
+          }
+        },
+        {
+          "client_id": "602319086946-bqprk42vi0st725i46gom8dudup06m0u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA6PoJZZSEXWzisF5oRoqssZTkkGmclCtk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "602319086946-bqprk42vi0st725i46gom8dudup06m0u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

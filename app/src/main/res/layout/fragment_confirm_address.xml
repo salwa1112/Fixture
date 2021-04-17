@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.ConfirmAddressFragment">
+
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="70dp"
+        android:fontFamily="@font/gotham_black"
+        android:text="F I X T U R E"
+        android:textColor="@color/colorAccent"
+        android:textSize="37sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="We fix the fracture."
+        android:fontFamily="@font/gotham_thin"
+        android:textSize="14sp"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintEnd_toEndOf="@+id/textView14"
+        app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView16">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/gotham_bold"
+            android:text="Confirm your location"
+            android:textAlignment="center"
+            android:textColor="#37474F"
+            android:layout_marginBottom="11dp"
+            android:textSize="21sp" />
+
+        <TextView
+        android:id="@+id/tv_customer_address_confirm_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="4 Queen Street, Brampton, Canada"
+        android:fontFamily="@font/gotham_bold"
+        android:textColor="@color/colorAccent"
+        android:textAllCaps="false"
+        android:textAlignment="center"
+        android:textSize="24sp"/>
+
+        <TextView
+            android:id="@+id/tv_selected_date_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="12/12/2020"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/gotham_bold"
+            android:textColor="@color/colorAccent"
+            android:textAllCaps="false"
+            android:textAlignment="center"
+            android:textSize="24sp"/>
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_confirm_address"
+        android:layout_width="186dp"
+        android:layout_height="58dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/gotham_black"
+        android:text="CONFIRM"
+        android:background="@drawable/btn_acept_credit_card_shape"
+        android:textSize="24sp"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

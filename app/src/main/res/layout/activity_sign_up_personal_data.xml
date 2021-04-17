@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.SignUpPersonalDataActivity">
+
+    <TextView
+        android:id="@+id/textView5re3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="128dp"
+        android:fontFamily="@font/gotham_black"
+        android:text="F I X T U R E"
+        android:textColor="@color/colorAccent"
+        android:textSize="26sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView5444wsds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:fontFamily="@font/gotham_black"
+        android:text="Personal Information"
+        android:textColor="@color/colorAccent"
+        android:textSize="26sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView5re3"
+        app:layout_constraintStart_toStartOf="@+id/textView5re3"
+        app:layout_constraintTop_toBottomOf="@+id/textView5re3" />
+
+    <EditText
+        android:id="@+id/et_full_name"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/edit_text_border"
+        android:fontFamily="@font/gotham_book"
+        android:hint="Full name"
+        android:paddingStart="14dp"
+        android:textColorHint="#3337474F"
+        android:textSize="15sp"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5444wsds"
+        tools:ignore="RtlSymmetry" />
+
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/edit_text_border"
+        android:fontFamily="@font/gotham_book"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:paddingStart="14dp"
+        android:textColorHint="#3337474F"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/et_full_name"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/et_full_name"
+        app:layout_constraintTop_toBottomOf="@+id/et_full_name"
+        tools:ignore="RtlSymmetry" />
+
+    <EditText
+        android:id="@+id/et_phone"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/edit_text_border"
+        android:fontFamily="@font/gotham_book"
+        android:hint="Phone"
+        android:inputType="phone"
+        android:paddingStart="14dp"
+        android:textColorHint="#3337474F"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/et_email"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/et_email"
+        app:layout_constraintTop_toBottomOf="@+id/et_email"
+        tools:ignore="RtlSymmetry" />
+
+    <EditText
+        android:id="@+id/et_username"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/edit_text_border"
+        android:fontFamily="@font/gotham_book"
+        android:hint="Username"
+        android:inputType="text"
+        android:paddingStart="14dp"
+        android:textColorHint="#3337474F"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/et_phone"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/et_phone"
+        app:layout_constraintTop_toBottomOf="@+id/et_phone"
+        tools:ignore="RtlSymmetry" />
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/edit_text_border"
+        android:fontFamily="@font/gotham_book"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingStart="14dp"
+        android:textColorHint="#3337474F"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/et_username"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/et_username"
+        app:layout_constraintTop_toBottomOf="@+id/et_username"
+        tools:ignore="RtlSymmetry" />
+
+    <EditText
+        android:id="@+id/et_confirm_password"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/edit_text_border"
+        android:fontFamily="@font/gotham_book"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:paddingStart="14dp"
+        android:textColorHint="#3337474F"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/et_password"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/et_password"
+        app:layout_constraintTop_toBottomOf="@+id/et_password"
+        tools:ignore="RtlSymmetry" />
+
+    <Button
+        android:id="@+id/btn_sign_up_personal_data_next"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="26dp"
+        android:background="#37474F"
+        android:fontFamily="@font/gotham_bold"
+        android:text="CONTINUE"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_confirm_password" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

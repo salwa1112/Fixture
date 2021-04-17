@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/dashboardFragment">
+
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="com.fixtureservicexyz.fragments.DashboardFragment"
+        android:label="FIXTURE"
+        tools:layout="@layout/fragment_dashboard">
+        <action
+            android:id="@+id/action_dashboardFragment_to_plumbingServicesFragment"
+            app:destination="@id/plumbingServicesFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_electricServicesFragment"
+            app:destination="@id/electricServicesFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/plumbingServicesFragment"
+        android:name="com.fixtureservicexyz.fragments.PlumbingServicesFragment"
+        android:label=" PLUMBING SERVICES"
+        tools:layout="@layout/fragment_plumbing_services">
+        <action
+            android:id="@+id/action_plumbingServicesFragment_to_plumbingServicingSelectedFragment"
+            app:destination="@id/plumbingServicingSelectedFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/myCartFragment"
+        android:name="com.fixtureservicexyz.fragments.MyCartFragment"
+        android:label="MY CART"
+        tools:layout="@layout/fragment_my_cart">
+        <action
+            android:id="@+id/action_myCartFragment_to_confirmAddressFragment"
+            app:destination="@id/confirmAddressFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_myCartFragment_to_dashboardFragment"
+            app:destination="@id/dashboardFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/electricServicesFragment"
+        android:name="com.fixtureservicexyz.fragments.ElectricServicesFragment"
+        android:label="ELECTRIC SERVICES"
+        tools:layout="@layout/fragment_electric_services">
+        <action
+            android:id="@+id/action_electricServicesFragment_to_electricServicingSelectedFragment"
+            app:destination="@id/electricServicingSelectedFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/plumbingServicingSelectedFragment"
+        android:name="com.fixtureservicexyz.fragments.PlumbingServicingSelectedFragment"
+        android:label="PLUMBING SERVICE SELECT"
+        tools:layout="@layout/fragment_plumbing_servicing_selected">
+        <action
+            android:id="@+id/action_plumbingServicingSelectedFragment_to_plumbingAddingServicesFragment"
+            app:destination="@id/plumbingAddingServicesFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/plumbingAddingServicesFragment"
+        android:name="com.fixtureservicexyz.fragments.PlumbingAddingServicesFragment"
+        android:label="PLUMBING ADDING SERVICE"
+        tools:layout="@layout/fragment_plumbing_adding_services">
+        <action
+            android:id="@+id/action_plumbingAddingServicesFragment_to_myCartFragment"
+            app:destination="@id/myCartFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_plumbingAddingServicesFragment_to_paymentMethodFragment"
+            app:destination="@id/paymentMethodFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/electricServicingSelectedFragment"
+        android:name="com.fixtureservicexyz.fragments.ElectricServicingSelectedFragment"
+        android:label="ELECTRIC SERVICE SELECT"
+        tools:layout="@layout/fragment_electric_servicing_selected">
+        <action
+            android:id="@+id/action_electricServicingSelectedFragment_to_electricAddingServicesFragment"
+            app:destination="@id/electricAddingServicesFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/electricAddingServicesFragment"
+        android:name="com.fixtureservicexyz.fragments.ElectricAddingServicesFragment"
+        android:label="ELECTRIC ADDING SERVICE"
+        tools:layout="@layout/fragment_electric_adding_services">
+        <action
+            android:id="@+id/action_electricAddingServicesFragment_to_myCartFragment"
+            app:destination="@id/myCartFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_electricAddingServicesFragment_to_paymentMethodFragment"
+            app:destination="@id/paymentMethodFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/paymentMethodFragment"
+        android:name="com.fixtureservicexyz.fragments.PaymentMethodFragment"
+        android:label="PAYMENTS METHODS"
+        tools:layout="@layout/fragment_payment_method">
+        <action
+            android:id="@+id/action_paymentMethodFragment_to_cardsPaymentsFragment"
+            app:destination="@id/cardsPaymentsFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_paymentMethodFragment_to_applePayFragment"
+            app:destination="@id/applePayFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_paymentMethodFragment_to_paypalPaymentFragment"
+            app:destination="@id/paypalPaymentFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_paymentMethodFragment_to_debitCardPaymentFragment"
+            app:destination="@id/debitCardPaymentFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/cardsPaymentsFragment"
+        android:name="com.fixtureservicexyz.fragments.CardsPaymentsFragment"
+        android:label="CARDS PAYMENTS"
+        tools:layout="@layout/fragment_cards_payments">
+        <action
+            android:id="@+id/action_cardsPaymentsFragment_to_orderResumenFragment"
+            app:destination="@id/orderResumenFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/confirmAddressFragment"
+        android:name="com.fixtureservicexyz.fragments.ConfirmAddressFragment"
+        android:label="CONFIRM ADDRESS"
+        tools:layout="@layout/fragment_confirm_address">
+        <action
+            android:id="@+id/action_confirmAddressFragment_to_orderConfirmationFragment"
+            app:destination="@id/orderConfirmationFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/orderConfirmationFragment"
+        android:name="com.fixtureservicexyz.fragments.OrderConfirmationFragment"
+        android:label="ORDER CONFIRMATION"
+        tools:layout="@layout/fragment_order_confirmation">
+        <action
+            android:id="@+id/action_orderConfirmationFragment_to_paymentMethodFragment"
+            app:destination="@id/paymentMethodFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/applePayFragment"
+        android:name="com.fixtureservicexyz.fragments.ApplePayFragment"
+        android:label="APPLE PAY"
+        tools:layout="@layout/fragment_apple_pay">
+        <action
+            android:id="@+id/action_applePayFragment_to_orderResumenFragment"
+            app:destination="@id/orderResumenFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/paypalPaymentFragment"
+        android:name="com.fixtureservicexyz.fragments.PaypalPaymentFragment"
+        android:label="PAYPAL PAY"
+        tools:layout="@layout/fragment_paypal_payment">
+        <action
+            android:id="@+id/action_paypalPaymentFragment_to_orderResumenFragment"
+            app:destination="@id/orderResumenFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/debitCardPaymentFragment"
+        android:name="com.fixtureservicexyz.fragments.CashOnDeliveryPaymentFragment"
+        android:label="CASH ON DELIVERY"
+        tools:layout="@layout/fragment_cash_on_delivery_payment">
+        <action
+            android:id="@+id/action_Cash_On_Delivery_PaymentFragment_to_orderResumenFragment"
+            app:destination="@id/orderResumenFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/orderResumenFragment"
+        android:name="com.fixtureservicexyz.fragments.OrderResumenFragment"
+        android:label="ORDER RESUME"
+        tools:layout="@layout/fragment_order_resumen">
+        <action
+            android:id="@+id/action_orderResumenFragment_to_endOrderFragment"
+            app:destination="@id/endOrderFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popUpTo="@id/dashboardFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/endOrderFragment"
+        android:name="com.fixtureservicexyz.fragments.EndOrderFragment"
+        android:label="ORDER FINISH"
+        tools:layout="@layout/fragment_end_order"/>
+    <fragment
+        android:id="@+id/aboutAppFragment"
+        android:name="com.fixtureservicexyz.fragments.AboutAppFragment"
+        android:label="About Us"
+        tools:layout="@layout/fragment_about_app" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.fixtureservicexyz.fragments.ProfileFragment"
+        android:label="PROFILE"
+        tools:layout="@layout/fragment_profile" />
+</navigation>

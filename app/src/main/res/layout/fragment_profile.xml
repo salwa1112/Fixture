@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragments.ProfileFragment">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/ic_account" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#33000000" />
+
+    <!-- Layout for user registered -->
+    <LinearLayout
+        android:id="@+id/ll_container_user_registered"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:visibility="gone"
+        >
+
+        <TextView
+            android:id="@+id/tv_user_name_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/gotham_bold"
+            android:gravity="center"
+            android:text="User name"
+            android:textColor="@color/colorAccent"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/et_user_name_info"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="25dp"
+            android:background="@drawable/edit_text_border"
+            android:enabled="false"
+            android:fontFamily="@font/gotham_medium"
+            android:paddingStart="15dp"
+            tools:text="Erza" />
+
+        <TextView
+            android:id="@+id/tv_full_name_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/gotham_bold"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:text="Full name"
+            android:textColor="@color/colorAccent"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/et_full_name_info"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="25dp"
+            android:background="@drawable/edit_text_border"
+            android:enabled="false"
+            android:fontFamily="@font/gotham_medium"
+            android:paddingStart="15dp"
+            tools:text="Erza Rhaman" />
+
+        <TextView
+            android:id="@+id/tv_email_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/gotham_bold"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:text="Email"
+            android:textColor="@color/colorAccent"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/et_email_info"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="25dp"
+            android:background="@drawable/edit_text_border"
+            android:enabled="false"
+            android:fontFamily="@font/gotham_medium"
+            android:paddingStart="15dp"
+            tools:text="Erza@gmail.com" />
+
+    </LinearLayout>
+
+    <!-- Layout for guest -->
+    <LinearLayout
+        android:id="@+id/ll_container_guest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_phone_info_guest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/gotham_bold"
+            android:gravity="center"
+            android:text="Guest"
+            android:textColor="@color/colorAccent"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/et_phone_info_guest"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="25dp"
+            android:background="@drawable/edit_text_border"
+            android:enabled="false"
+            android:fontFamily="@font/gotham_medium"
+            android:paddingStart="15dp" />
+    </LinearLayout>
+
+    <!-- Main address registered -->
+    <TextView
+        android:id="@+id/tv_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="3"
+        android:lines="3"
+        android:fontFamily="@font/gotham_bold"
+        android:textSize="15sp"
+        android:textAllCaps="false"
+        android:lineSpacingMultiplier="1.4"
+        android:layout_marginTop="20dp"
+        android:textAlignment="center"
+        android:textColor="#37474F"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:ellipsize="end"
+        tools:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."/>
+
+    <TextView
+        android:id="@+id/et_sign_out_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:clickable="true"
+        android:focusable="auto"
+        android:fontFamily="@font/gotham_bold"
+        android:gravity="center"
+        android:text="Sign Out"
+        android:textColor="#37474F"
+        android:textSize="15dp" />
+
+</LinearLayout>

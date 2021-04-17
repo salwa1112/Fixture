@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="35dp"
+        tools:context=".fragments.AboutAppFragment">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="44dp"
+            android:fontFamily="@font/gotham_bold"
+            android:text="Service Features"
+            android:textAlignment="textStart"
+            android:textColor="#707070"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:drawableLeft="@drawable/ic_check"
+            android:drawablePadding="7dp"
+            android:fontFamily="@font/gotham_book"
+            android:gravity="center_vertical"
+            android:text="Professional Technician"
+            android:textColor="#707070"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:drawableLeft="@drawable/ic_check"
+            android:drawablePadding="7dp"
+            android:fontFamily="@font/gotham_book"
+            android:gravity="center_vertical"
+            android:text="Doorstep Service"
+            android:textColor="#707070"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:drawableLeft="@drawable/ic_check"
+            android:drawablePadding="7dp"
+            android:fontFamily="@font/gotham_book"
+            android:gravity="center_vertical"
+            android:text="Safety Assurance"
+            android:textColor="#707070"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:drawableLeft="@drawable/ic_check"
+            android:drawablePadding="7dp"
+            android:fontFamily="@font/gotham_book"
+            android:gravity="center_vertical"
+            android:text="Service Warenty"
+            android:textColor="#707070"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="21dp"
+            android:fontFamily="@font/gotham_bold"
+            android:text="Payment"
+            android:textAlignment="textStart"
+            android:textColor="#707070"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="40dp"
+            android:drawableLeft="@drawable/ic_check"
+            android:drawablePadding="7dp"
+            android:fontFamily="@font/gotham_book"
+            android:gravity="center_vertical"
+            android:lineSpacingExtra="9dp"
+            android:text="After service completion you have to pay through fixure.xyz app or cash on Delivery."
+            android:textColor="#707070"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="41dp"
+            android:fontFamily="@font/gotham_bold"
+            android:text="Pricing"
+            android:textAlignment="textStart"
+            android:textColor="#707070"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="40dp"
+            android:drawableLeft="@drawable/ic_check"
+            android:drawablePadding="7dp"
+            android:fontFamily="@font/gotham_book"
+            android:gravity="center_vertical"
+            android:lineSpacingExtra="9dp"
+            android:text="You only have to pay the service charge and materials/parts cost (if taken)"
+            android:textColor="#707070"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="39dp"
+            android:layout_marginEnd="40dp"
+            android:drawableLeft="@drawable/ic_check"
+            android:drawablePadding="7dp"
+            android:fontFamily="@font/gotham_book"
+            android:gravity="center_vertical"
+            android:lineSpacingExtra="9dp"
+            android:text="Visiting cost $30 will have to pay if no service is availed"
+            android:textColor="#707070"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
